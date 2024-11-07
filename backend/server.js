@@ -1,11 +1,9 @@
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
-
 const app = express();
 const PORT = 3000;
 
-// Conexión a la base de datos SQLite
 const dbPath = path.resolve(__dirname, 'Tribu.db');
 const db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
@@ -83,7 +81,6 @@ app.delete('/usuarios/:id', (req, res) => {
     });
 });
 
-// PUT - Actualizar solo la foto de perfil
 // PUT - Actualizar solo la foto de perfil
 app.put('/usuarios/:id/foto', (req, res) => {
     const { foto } = req.body;
