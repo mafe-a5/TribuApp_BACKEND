@@ -1,0 +1,82 @@
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (31, 'Introducción a la Programación', 1);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (32, 'Estructuras de Datos', 2);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (33, 'Algoritmos y Complejidad', 3);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (34, 'Sistemas Operativos', 4);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (35, 'Bases de Datos', 5);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (36, 'Redes y Comunicaciones', 6);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (37, 'Ingeniería de Software', 7);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (38, 'Inteligencia Artificial', 8);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (39, 'Aprendizaje Automático', 9);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (40, 'Desarrollo Web', 10);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (41, 'Ciberseguridad', 9);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (42, 'Minería de Datos', 8);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (43, 'Computación en la Nube', 7);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (44, 'Arquitectura de Computadoras', 5);
+INSERT INTO cursos (id, nombre, nivel_id) VALUES (45, 'Gestión de Proyectos de TI', 6);
+
+----------------------------------------------------------------------------
+
+-- Insertar registros en la tabla `posts` para asegurar la existencia de `post_id`
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (31, 'Fundamentos de Programación', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (32, 'Apuntes de Estructuras de Datos', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (33, 'Algoritmos y Complejidad', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (34, 'Conceptos de Sistemas Operativos', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (35, 'Introducción a Bases de Datos', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (36, 'Fundamentos de Redes', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (37, 'Ciclo de Vida del Software', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (38, 'Introducción a la IA', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (39, 'Algoritmos de Machine Learning', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (40, 'HTML y CSS Básico', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (41, 'Fundamentos de Seguridad Informática', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (42, 'Introducción a la Minería de Datos', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (43, 'Conceptos de Cloud Computing', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (44, 'Fundamentos de Arquitectura de Computadoras', '2024-11-04 05:32:00', 1);
+INSERT INTO posts (id, descripcion, fecha_subida_post, usuario_id) VALUES (45, 'Introducción a la Gestión de Proyectos de TI', '2024-11-04 05:32:00', 1);
+
+
+------------------------------------------------------------------------------------------------
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (51, 'Fundamentos de Programación', 'pdf', '2024-11-04 09:00:00', 'https://university.edu/fundamentos-programacion.pdf', 31);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (52, 'Ejercicios Básicos de Programación', 'zip', '2024-11-04 10:00:00', 'https://university.edu/ejercicios-programacion.zip', 31);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (53, 'Apuntes de Estructuras de Datos', 'pdf', '2024-11-05 10:30:00', 'https://university.edu/apuntes-estructuras-datos.pdf', 32);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (54, 'Implementación de Listas y Pilas', 'ppt', '2024-11-05 11:00:00', 'https://university.edu/implementacion-listas-pilas.ppt', 32);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (55, 'Análisis de Algoritmos', 'pdf', '2024-11-06 09:30:00', 'https://university.edu/analisis-algoritmos.pdf', 33);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (56, 'Ejercicios de Complejidad Computacional', 'docx', '2024-11-06 10:30:00', 'https://university.edu/ejercicios-complejidad.docx', 33);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (57, 'Conceptos de Sistemas Operativos', 'pdf', '2024-11-07 08:00:00', 'https://university.edu/conceptos-sistemas-operativos.pdf', 34);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (58, 'Gestión de Memoria en SO', 'ppt', '2024-11-07 09:30:00', 'https://university.edu/gestion-memoria-so.ppt', 34);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (59, 'Introducción a Bases de Datos', 'pdf', '2024-11-08 08:30:00', 'https://university.edu/introduccion-bases-datos.pdf', 35);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (60, 'Normalización de Bases de Datos', 'docx', '2024-11-08 10:00:00', 'https://university.edu/normalizacion-bd.docx', 35);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (61, 'Fundamentos de Redes', 'pdf', '2024-11-09 08:00:00', 'https://university.edu/fundamentos-redes.pdf', 36);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (62, 'Modelos de Redes y Protocolos', 'ppt', '2024-11-09 09:00:00', 'https://university.edu/modelos-redes.ppt', 36);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (63, 'Ciclo de Vida del Software', 'pdf', '2024-11-10 08:30:00', 'https://university.edu/ciclo-vida-software.pdf', 37);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (64, 'Patrones de Diseño de Software', 'ppt', '2024-11-10 09:30:00', 'https://university.edu/patrones-diseno.ppt', 37);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (65, 'Introducción a la IA', 'pdf', '2024-11-11 08:00:00', 'https://university.edu/introduccion-ia.pdf', 38);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (66, 'Ejercicios de IA', 'docx', '2024-11-11 09:00:00', 'https://university.edu/ejercicios-ia.docx', 38);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (67, 'Algoritmos de Machine Learning', 'pdf', '2024-11-12 08:30:00', 'https://university.edu/algoritmos-ml.pdf', 39);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (68, 'Redes Neuronales Básicas', 'ppt', '2024-11-12 09:30:00', 'https://university.edu/redes-neuronales.ppt', 39);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (69, 'HTML y CSS Básico', 'pdf', '2024-11-13 08:00:00', 'https://university.edu/html-css-basico.pdf', 40);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (70, 'JavaScript Interactivo', 'docx', '2024-11-13 09:00:00', 'https://university.edu/javascript-interactivo.docx', 40);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (71, 'Fundamentos de Seguridad Informática', 'pdf', '2024-11-14 08:30:00', 'https://university.edu/fundamentos-ciberseguridad.pdf', 41);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (72, 'Protección de Redes', 'ppt', '2024-11-14 09:30:00', 'https://university.edu/proteccion-redes.ppt', 41);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (73, 'Introducción a la Minería de Datos', 'pdf', '2024-11-15 08:00:00', 'https://university.edu/introduccion-mineria-datos.pdf', 42);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (74, 'Técnicas de Minería de Datos', 'docx', '2024-11-15 09:00:00', 'https://university.edu/tecnicas-mineria-datos.docx', 42);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (75, 'Conceptos de Cloud Computing', 'pdf', '2024-11-16 08:30:00', 'https://university.edu/conceptos-cloud.pdf', 43);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (76, 'Servicios de Nube Pública y Privada', 'ppt', '2024-11-16 09:30:00', 'https://university.edu/servicios-nube.ppt', 43);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (77, 'Fundamentos de Arquitectura de Computadoras', 'pdf', '2024-11-17 08:00:00', 'https://university.edu/fundamentos-arquitectura.pdf', 44);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (78, 'Procesadores y Memoria', 'ppt', '2024-11-17 09:00:00', 'https://university.edu/procesadores-memoria.ppt', 44);
+
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (79, 'Introducción a la Gestión de Proyectos de TI', 'pdf', '2024-11-18 08:00:00', 'https://university.edu/gestion-proyectos-ti.pdf', 45);
+INSERT INTO materiales (id, nombre, tipo, fecha_subida, enlace, post_id) VALUES (80, 'Metodologías Ágiles y Tradicionales', 'ppt', '2024-11-18 09:30:00', 'https://university.edu/metodologias-agiles.pdf', 45);
