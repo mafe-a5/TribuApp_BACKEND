@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:8080
+
+### 1. Cambiar Contraseña del Usuario
+PUT {{baseUrl}}/configuraciones/usuario/1/cambiar_contrasena
+Content-Type: application/json
+
+{
+  "codigo": "20210274",
+  "contrasena_actual": "123",
+  "nueva_contrasena": "456"
+}
+
+
+### 2. Obtener foto Asociados al Usuario
+GET {{baseUrl}}/configuraciones/usuario/1/foto
+
+### 3. Obtener Publicaciones del Usuario
+GET {{baseUrl}}/configuraciones/usuario/1/publicaciones
+
+### 4. Eliminar Cuenta de Usuario
+DELETE {{baseUrl}}/configuraciones/usuario/20210274/eliminar_cuenta
+
+### 5. Cerrar Sesión de Usuario
+POST {{baseUrl}}/configuraciones/usuario/1/cerrar_sesion
+
+### 6. Cambiar Carrera del Usuario
+PUT {{baseUrl}}/configuraciones/usuario/20210274/cambiar_carrera
+Content-Type: application/json
+
+{
+  "carrera_id": 3
+}

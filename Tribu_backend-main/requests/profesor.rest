@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:8080
+
+##Listar profesores
+GET {{baseUrl}}/profesores/lista
+#############################################
+
+### Buscar profesores por nombre
+GET {{baseUrl}}/profesores/buscar?nombre=JOSE LUIS
+Content-Type: application/json
+
+### Listar Profesores por Curso
+GET {{baseUrl}}/profesores/curso/Administracion
+
+### Mostrar la informacion del profesor por su id
+GET {{baseUrl}}/profesor/1

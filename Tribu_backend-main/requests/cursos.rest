@@ -1,0 +1,24 @@
+@baseUrl = http://localhost:8080
+
+### Obtener curso por ID
+GET {{baseUrl}}/cursos/1
+
+### Buscar curso por nombre
+GET {{baseUrl}}/cursos/buscar/nombre?nombre=Programacion
+
+### Buscar curso por nivel
+GET {{baseUrl}}/cursos/buscar/nivel?nivel_id=2
+
+### Listar materiales asociados a un curso por ID del curso
+GET {{baseUrl}}/cursos/1/materiales
+
+### Actualizar material asociado a un curso por ID del curso y ID del material
+PUT {{baseUrl}}/cursos/1/materiales/1
+Content-Type: application/json
+
+{
+  "nombre": "Nuevo nombre del material",
+  "tipo": "PDF",
+  "fecha_subida": "2024-11-01",
+  "enlace": "https://nuevo-enlace.com"
+}

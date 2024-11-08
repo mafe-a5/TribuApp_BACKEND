@@ -1,0 +1,61 @@
+@baseUrl = http://localhost:8080
+
+### 1. Listar todas las calificaciones de un profesor por ID
+# Devuelve todas las calificaciones para el profesor con el ID especificado.
+GET {{baseUrl}}/profesor/1/calificaciones
+
+### 2. Obtener el promedio de calificaciones de un profesor por ID
+# Devuelve el promedio de las calificaciones del profesor con el ID especificado.
+GET {{baseUrl}}/profesor/1/promedio-calificaciones
+
+### 3. Crear una calificación para un profesor
+# Crea una nueva calificación para el profesor con ID especificado, con un usuario y reseña.
+POST {{baseUrl}}/profesor/1/calificacion
+Content-Type: application/json
+
+{
+  "usuario_id": 1,
+  "estrella": 3,
+  "resenia": "Buen profesor"
+}
+
+### 4. Buscar Usuarios por Nombre o Código
+### Buscar Usuarios por Nombre (Ejemplo con "Andrea Barro")
+GET {{baseUrl}}/usuarios/buscar?nombre=Andrea Barro
+
+### Buscar Usuarios por Nombre (Ejemplo con "Crisbeth Sovero")
+GET {{baseUrl}}/usuarios/buscar?nombre=Crisbeth Sovero
+
+### Buscar Usuarios por Código (Ejemplo con "20210274")
+GET {{baseUrl}}/usuarios/buscar?codigo=20210274
+
+### Buscar Usuarios por Código (Ejemplo con "20214446")
+GET {{baseUrl}}/usuarios/buscar?codigo=20214446
+
+### 5. Buscar Profesores por Nombre o Correo
+### Buscar Profesores por Nombre
+GET {{baseUrl}}/profesores/buscar?nombre=ALIAGA ESPINOZA, PAVEL DEMIAN
+
+### Buscar Profesores por Correo
+GET {{baseUrl}}/profesores/buscar?correo=miriam.amable@universidad.edu
+
+### 6. Buscar Cursos por Nombre o Nivel
+### Buscar Cursos por Nombre
+GET {{baseUrl}}/cursos/buscar?nombre=Contabilidad Avanzada
+
+### Buscar Cursos por Nivel
+GET {{baseUrl}}/cursos/buscar?nivel_id=2
+
+### 7. Buscar Posts por Descripción
+# Realiza una búsqueda de publicaciones por descripción.
+GET {{baseUrl}}/posts/buscar?descripcion=Hoy tuve examen de calculo aqui comparto mi resumen.
+
+### Realiza una búsqueda de publicaciones por fecha de subida.
+GET {{baseUrl}}/posts/buscar?fecha_subida_post=2024-10-27 23:32:00
+
+### 8. Buscar Materiales por Nombre
+### Busca materiales específicos usando su nombre.
+GET {{baseUrl}}/materiales/buscar?nombre=street
+
+### Busca materiales específicos usando su tipo (ejemplo: PDF).
+GET {{baseUrl}}/materiales/buscar?tipo=ppt

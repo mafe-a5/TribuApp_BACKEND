@@ -1,0 +1,24 @@
+@baseUrl = http://localhost:8080
+
+### 1. Obtener perfil de un usuario por código
+GET {{baseUrl}}/usuarios/20210274
+
+### 2. Buscar usuario por nombre
+GET {{baseUrl}}/usuarios/buscar/nombre?nombre=Andrea
+
+### 3. Buscar usuario por correo
+GET {{baseUrl}}/usuarios/buscar/correo?correo=20210006@aloe.ulima.edu.pe
+
+### 4. Buscar usuario por celular
+GET {{baseUrl}}/usuarios/buscar/celular?celular=93246009
+
+### 5. Actualizar perfil de un usuario por código
+PUT {{baseUrl}}/usuarios/20210274
+Content-Type: application/json
+
+{
+  "nombre": "Andrea Barro Actualizado",
+  "correo": "nuevo_correo@aloe.ulima.edu.pe",
+  "celular": "932468275",
+  "foto": "assets/img/usuario_actualizado.png"
+}

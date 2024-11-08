@@ -1,0 +1,20 @@
+@baseUrl = http://localhost:8080
+
+### Listar todas las notificaciones
+GET {{baseUrl}}/notificaciones
+
+### Listar notificaciones por usuario
+GET {{baseUrl}}/notificaciones?usuario_id=1
+
+### Marcar notificación como vista
+PUT {{baseUrl}}/notificaciones/1/vista
+
+### Crear una nueva notificación
+POST {{baseUrl}}/notificaciones
+Content-Type: application/json
+
+{
+  "usuario_id": 1,
+  "tipo_notificacion": 2,
+  "post_id": 3  // Asegúrate de que el `post_id` existe en `posts`
+}
